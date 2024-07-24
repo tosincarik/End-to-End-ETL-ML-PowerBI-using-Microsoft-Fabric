@@ -37,7 +37,7 @@ Create a new workspace named "ProjectSpace2," which will initially be empty and 
 - The destination is configured to the lakehouse that has been set up.
 - The resulting data from the API, in JSON format, is saved under the specified directory in the lakehouse folder section.
 
-                                                              Image of the copy activity in the canvas of ADF:
+                    Image of the copy activity in the canvas of ADF:
 
 ![](CopyActivityView.png)
 
@@ -46,7 +46,7 @@ Create a new workspace named "ProjectSpace2," which will initially be empty and 
 - The raw JSON data is cleaned, transformed, and explored, then saved as a dataframe in Spark and subsequently as a table in the same lakehouse, named 'cleaneddata.'
 - Data is saved using Spark SQL with an incremental load, typical of Slowly Changing Dimension Type 2, updating rows with changing URLs while preserving the original rows.
   
-Image of the raw notebook used for cleaning and transformation:
+                    Image of the raw notebook used for cleaning and transformation:
 
 ![](IncrementalLoadType.png)
 
@@ -67,7 +67,7 @@ Image of the raw notebook used for cleaning and transformation:
 - The pipeline can be scheduled to run daily, weekly, or as needed to fetch the latest news.
 - It's essential for ETL Engineers to connect to a Microsoft Account for regular updates on the status of these activities (success, failure, completion).
 
-  Image of the workspace and all the artifacts created and also the connected activities with a scheduled run:
+                    Image of the workspace and all the artifacts created and also the connected activities with a scheduled run:
 
   ![](WorkspaceView.png)
   
@@ -75,7 +75,7 @@ Image of the raw notebook used for cleaning and transformation:
 
 ## Visuals
 
-Include images or screenshots of the data factory pipeline, connected activities, and Power BI reports to illustrate the setup and results.
+                    Image of the Power BI report generated
 
 
 ![](PowerBIReport.png)
