@@ -1,6 +1,6 @@
 # End-to-End ETL/ML/Power BI Solution in Microsoft Fabric
 
-**_Disclaimer: All datasets and reports do not represent any company or institution but live public datasets from BING to demonstrate the capabilities of ETL process in Microsoft Fabric._**
+**_Disclaimer: The datasource is a live public datasets from BING Website to demonstrate the capabilities of ETL process in Microsoft Fabric._**
 
 Welcome to this project! Here, we explore an end-to-end solution for building a text sentiment analysis using public data from the internet, leveraging Microsoft Fabric.
 
@@ -8,7 +8,7 @@ Welcome to this project! Here, we explore an end-to-end solution for building a 
 1. Use of Lakehouse and its SQL endpoint for reporting
 2. Spark and Notebooks
 3. Data Factory Copy activity and Pipeline
-4. MLOps
+4. Machine Learning (NLP)
 5. Power BI
 
 ---
@@ -23,7 +23,7 @@ After loading the data into our data store (lakehouse) using Azure Data Factory 
 
 Once the data is cleaned, it is imported into another notebook for machine learning sentiment analysis. Here, the data is trained using the ML model included in Synapse. The trained data provides the sentiment of the news (positive or negative), and a report is developed.
 
-All processes are connected serially in a pipeline to run concurrently and are scheduled for a daily data refresh with only incremental load for Slowly Changing Dimension Type 1.
+All processes are connected serially in a pipeline to run concurrently and are scheduled for a daily data refresh with only incremental load for Slowly Changing Dimension Type 2.
 
 ## Step 1: Setting up the Environment in Fabric
 
