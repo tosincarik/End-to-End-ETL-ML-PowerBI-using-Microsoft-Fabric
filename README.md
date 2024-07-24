@@ -45,7 +45,7 @@ Image of the copy activity in the canvas of ADF:
 - The raw JSON data is cleaned, transformed, and explored, then saved as a dataframe in Spark and subsequently as a table in the same lakehouse, named 'cleaneddata.'
 - Data is saved using Spark SQL with an incremental load, typical of Slowly Changing Dimension Type 2, updating rows with changing URLs while preserving the original rows.
 Image of the raw notebook used for cleaning and transformation:
-![](CopyActivityView.png)
+![](RawNotebook.png)
 
 ## Step 4: Training the Dataset for Sentiment Analysis Using Machine Learning
 
