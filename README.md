@@ -36,9 +36,6 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 - Source data is fetched by setting a relative URL and inputting the API header and keys from BING API. The keys are private and can be accessed by setting up an Azure resource in the DevOps marketplace.
 - The destination is configured to the lakehouse that has been set up.
 - The resulting data from the API, in JSON format, is saved under the user specified directory in the lakehouse folder section.
-
-
-
 ![](CopyActivityView.png)
 *<center>Copy activity in the canvas of ADF<center>*
 
