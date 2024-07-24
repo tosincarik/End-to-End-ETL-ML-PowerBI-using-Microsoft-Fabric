@@ -28,6 +28,7 @@ All processes are connected serially in a pipeline to run concurrently and are s
 ## Step 1: Setting up the Environment in Fabric
 
 Create a new workspace named "ProjectSpace2," which will initially be empty and will be populated with other artifacts as they are created. A new datastore is setup and a lakehouse is setup and named as "LH Bronze". The choice of lakehouse is because it supports notebooks and all types of files as we will be working with JSON files.
+![](SchedulePipeline.png)
 
 
 ## Step 2: Use the Copy Activity in the Pipeline to Fetch Data from Bing API
@@ -64,9 +65,13 @@ Image of the raw notebook used for cleaning and transformation:
 - The pipeline can be scheduled to run daily, weekly, or as needed to fetch the latest news.
 - It's essential for ETL Engineers to connect to a Microsoft Account for regular updates on the status of these activities (success, failure, completion).
 
+  Image of the connected activities and scheduled run:
+  ![](SchedulePipeline.png)
+
 ## Visuals
 
 Include images or screenshots of the data factory pipeline, connected activities, and Power BI reports to illustrate the setup and results.
+
 
 ![](PowerBIReport.png)
 
