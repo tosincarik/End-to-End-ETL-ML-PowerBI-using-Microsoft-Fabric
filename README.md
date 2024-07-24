@@ -36,6 +36,7 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 - Source data is fetched by setting a relative URL and inputting the API header and keys from BING API. The keys are private and can be accessed by setting up an Azure resource in the DevOps marketplace.
 - The destination is configured to the lakehouse that has been set up.
 - The resulting data from the API, in JSON format, is saved under the user specified directory in the lakehouse folder section.
+---
 ![](CopyActivityView.png)
 *<center>Copy activity in the canvas of ADF<center>*
 
@@ -43,6 +44,7 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 
 - The raw JSON data is cleaned, transformed, and explored, then saved as a dataframe in Spark and subsequently as a table in the same lakehouse, named 'cleaneddata.'
 - Data is saved using Spark SQL with an incremental load, typical of Slowly Changing Dimension Type 2, updating rows with changing URLs while preserving the original rows.
+---
 ![](IncrementalLoadType.png)
 *<center>Raw notebook used for cleaning and transformation<center>*
 
@@ -65,16 +67,18 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 - Configure the pipelines to run sequentially, where one data source and action feeds into another.
 - The pipeline can be scheduled to run daily, weekly, or as needed to fetch the latest news.
 - It's essential for ETL Engineers to connect to a Microsoft Account for regular updates on the status of these activities (success, failure, completion).
+---
 ![](WorkspaceView.png)
 *<center>Workspace view of all the artifacts created<center>*
 
   
-  
+---
 ![](SchedulePipeline.png)
 *<center>Connected activities with a scheduled run<center>*
 
 ## Visuals
 
+---
 ![](PowerBIReport.png)
 *<center>Image of the Power BI report generated<center>*
 
