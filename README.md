@@ -26,11 +26,11 @@ Once the data is cleaned, it is imported into another notebook for machine learn
 All processes are connected serially in a pipeline to run concurrently and are scheduled for a daily data refresh with only incremental load for Slowly Changing Dimension Type 2.
 
 ## Step 1: Setting up the Environment in Fabric
-
 Create a new workspace and name it as "ProjectSpace2," which will initially be empty and will be populated with other fabric artifacts as they are created. A new datastore is setup and a lakehouse is setup named as "LH Bronze". The choice of lakehouse is due to its supports of notebooks and all types of files as we will be working with JSON files later on in the project.
 
 
 ## Step 2: Use the Copy Activity in the Pipeline to Fetch Data from Bing API
+
 - From the workspace, a new data pipleine is created by selecting from the 'New' button and a new canvas is displayed
 - Drag the copy activity feature into the canvas and configure the source and destination of the data.
 - Source data is fetched by setting a relative URL and inputting the API header and keys from BING API. The keys are private and can be accessed by setting up an Azure resource in the DevOps marketplace.
@@ -43,16 +43,17 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 
 - The raw JSON data is cleaned, transformed, and explored, then saved as a dataframe in Spark and subsequently as a table in the same lakehouse, named 'cleaneddata.'
 - Data is saved using Spark SQL with an incremental load, typical of Slowly Changing Dimension Type 2, updating rows with changing URLs while preserving the original rows.
-  
-                    Image of the raw notebook used for cleaning and transformation:
-
 ![](IncrementalLoadType.png)
+*<center>Raw notebook used for cleaning and transformation<center>*
+
+
 
 ## Step 4: Training the Dataset for Sentiment Analysis Using Machine Learning
 
 - The task is to use Natural Language Processing (NLP) to train a model to recognize text and classify the sentiment as negative, neutral, or positive.
 - In this context, the model determines the tone of news articles. This NLP model can also be used for analyzing customer feedback in surveys.
 - After training, a new field with the sentiment result is generated in a new table named 'analysedData.'
+  
 
 ## Step 5: Build Report in Power BI
 
@@ -64,26 +65,20 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 - Configure the pipelines to run sequentially, where one data source and action feeds into another.
 - The pipeline can be scheduled to run daily, weekly, or as needed to fetch the latest news.
 - It's essential for ETL Engineers to connect to a Microsoft Account for regular updates on the status of these activities (success, failure, completion).
+![](WorkspaceView.png)
+*<center>Workspace view of all the artifacts created<center>*
 
-                    Image of the workspace and all the artifacts created and also the connected activities with a scheduled run:
-
-  ![](WorkspaceView.png)
   
-  ![](SchedulePipeline.png)
+  
+![](SchedulePipeline.png)
+*<center>Connected activities with a scheduled run<center>*
 
 ## Visuals
 
-                    Image of the Power BI report generated
-
-
 ![](PowerBIReport.png)
-
+*<center>Image of the Power BI report generated<center>*
 
 ---
-
-## License
-
-
 
 ## Acknowledgements
 
