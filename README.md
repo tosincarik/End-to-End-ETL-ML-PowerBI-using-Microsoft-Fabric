@@ -68,6 +68,9 @@ Image of the raw notebook used for cleaning and transformation:
 
 Include images or screenshots of the data factory pipeline, connected activities, and Power BI reports to illustrate the setup and results.
 
+![](PowerBI Report.png)
+
+
 ---
 
 ## License
