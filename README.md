@@ -15,7 +15,7 @@ Welcome to this project! Here, we explore an end-to-end solution for building a 
 
 ## Project Scope:
 
-The environment is set up by creating a workspace with the appropriate permissions. For this project, we are using a trial license of Microsoft Fabric, which provides access to F64 capacity, ensuring sufficient computing resources for the workload.
+The environment is set up by creating a workspace with the appropriate permissions. For this project, we are using a trial license of Microsoft Fabric, which provides access to F64 capacity, ensuring sufficient computing resources for the workload. The workspace is named ProjectSpace2
 
 This project aims to analyze data from Bing by connecting to live data through an API source. We set up a connection to the Bing REST API using the copy activity feature of Microsoft Fabric, which provides a fast way of loading data with the highest throughput as it requires no transformation.
 
@@ -27,11 +27,11 @@ All processes are connected serially in a pipeline to run concurrently and are s
 
 ## Step 1: Setting up the Environment in Fabric
 
-Create a new workspace named "LH Bronze," which will initially be empty and will be populated with other artifacts as they are created.
+Create a new workspace named "ProjectSpace2," which will initially be empty and will be populated with other artifacts as they are created. A new datastore is setup and a lakehouse is setup and named as "LH Bronze". The choice of lakehouse is because it supports notebooks and all types of files as we will be working with JSON files.
 
 
 ## Step 2: Use the Copy Activity in the Pipeline to Fetch Data from Bing API
-
+- From the workspace, a new data pipleine is created by selecting from the 'New' button and a new canvas is displayed
 - Drag the copy activity feature into the canvas and configure the source and destination of the Bing API.
 - Source data is fetched by setting a relative URL and inputting the API header and keys. The keys are private and can be accessed by setting up an Azure resource in the DevOps marketplace.
 - The destination is configured to the lakehouse that has been set up.
