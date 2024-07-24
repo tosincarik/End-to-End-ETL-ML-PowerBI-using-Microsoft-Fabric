@@ -44,7 +44,7 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 
 - The raw JSON data is cleaned, transformed, and explored, then saved as a dataframe in Spark and subsequently as a table in the same lakehouse, named 'cleaneddata.'
 - Data is saved using Spark SQL with an incremental load, typical of Slowly Changing Dimension Type 2, updating rows with changing URLs while preserving the original rows.
-- Link to notebook here : 
+- Link to notebook here : <https://github.com/tosincarik/End-to-End-ETL-ML-PowerBI-using-Microsoft-Fabric/blob/main/RawData%20Transform.ipynb>
 ---
 ![](IncrementalLoadType.png)
 *<center>Raw notebook used for cleaning and transformation<center>*
