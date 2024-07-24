@@ -40,7 +40,7 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 
 
 ![](CopyActivityView.png)
-                                                          *Copy activity in the canvas of ADF*:
+<center>*Copy activity in the canvas of ADF*<center>
 
 ## Step 3: Data Transformation and Cleaning in Notebook
 
