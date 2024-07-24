@@ -29,12 +29,16 @@ All processes are connected serially in a pipeline to run concurrently and are s
 
 Create a new workspace named "LH Bronze," which will initially be empty and will be populated with other artifacts as they are created.
 
+
 ## Step 2: Use the Copy Activity in the Pipeline to Fetch Data from Bing API
 
 - Drag the copy activity feature into the canvas and configure the source and destination of the Bing API.
 - Source data is fetched by setting a relative URL and inputting the API header and keys. The keys are private and can be accessed by setting up an Azure resource in the DevOps marketplace.
 - The destination is configured to the lakehouse that has been set up.
 - The resulting data from the API, in JSON format, is saved under the specified directory in the lakehouse folder section.
+
+Image of the copy activity in the canvas of ADF
+![](Model_View.PNG) 
 
 ## Step 3: Data Transformation and Cleaning in Notebook
 
