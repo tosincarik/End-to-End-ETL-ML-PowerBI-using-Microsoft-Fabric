@@ -39,6 +39,7 @@ Create a new workspace named "ProjectSpace2," which will initially be empty and 
 
 Image of the copy activity in the canvas of ADF
 ![](Model_View.PNG) 
+![](CopyActivityView.png)
 
 ## Step 3: Data Transformation and Cleaning in Notebook
 
