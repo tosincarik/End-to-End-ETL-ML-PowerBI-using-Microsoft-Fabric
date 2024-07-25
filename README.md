@@ -56,6 +56,8 @@ Create a new workspace and name it as "ProjectSpace2," which will initially be e
 - The task is to use Natural Language Processing (NLP) to train a model to recognize text and classify the sentiment as negative, neutral, or positive.
 - In this context, the model determines the tone of news articles. This NLP model can also be used for analyzing customer feedback in surveys.
 - After training, a new field with the sentiment result is generated in a new table named 'analysedData.'
+- Link to notebook:<a href="https://github.com/tosincarik/End-to-End-ETL-ML-PowerBI-using-Microsoft-Fabric/blob/main/SentimentAnalysisNote.ipynb">Here</a>  
+  
   
 
 ## Step 5: Build Report in Power BI
